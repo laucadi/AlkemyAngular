@@ -1,0 +1,88 @@
+.container {
+  width: 400px;
+  .carta {
+    border-radius: 30px;
+    overflow: hidden;
+  }
+  .card-header {
+    background-color: #ea9329;
+    background-color: #ea9329;
+    height: 55px;
+  }
+  .imagen {
+    height: 55px;
+    padding: 0;
+    img {
+      width: 100%;
+    }
+    section {
+      width: 100%;
+      height: 55px;
+      background-color: #ea9329;
+      display: flex;
+      justify-content: space-around;
+      span {
+        img {
+          width: 40px;
+        }
+      }
+    }
+  }
+
+  .cuerpo {
+    h1 {
+      font-size: 1.8rem;
+      padding-top: 20px;
+      font-weight: bold;
+      position: relative;
+    }
+    h1:after {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 90px;
+      height: 4px;
+      background-color: #efa13f;
+    }
+    p {
+      font-size: 0.8rem;
+    }
+  }
+  .secciones {
+    border-bottom-right-radius: 30px;
+    border-bottom-left-radius: 30px;
+  }
+  .seccion {
+    border-radius: 30%;
+
+    i {
+      color: #ea9329;
+    }
+    h5,
+    h6 {
+      color: #343434;
+      font-size: 0.7rem;
+    }
+
+    button {
+      padding: 0px 5px 5px 5px;
+      //box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+      //rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+      //rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+
+      img {
+        width: 32px;
+      }
+    }
+  }
+
+  .comprar {
+    cursor: pointer;
+    background-color: #ea9329;
+    border-radius: 0;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+      rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+      rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+  }
+}

@@ -1,0 +1,63 @@
+.navbar {
+  background-color: transparent !important;
+  padding: 0;
+}
+.navbar-brand {
+  font-size: 1.2em;
+  font-weight: bolder;
+  .title-1 {
+    padding-left: 10px;
+    color: #efa13f;
+    font-family: "Square Peg", cursive;
+    font-size: 1.6rem;
+  }
+  .title-2 {
+    color: #1b1a17;
+    font-family: "Square Peg", cursive;
+    font-size: 1.6rem;
+  }
+}
+.navbar-collapse {
+  font-size: 15px;
+
+  margin-right: 60px;
+  .nav-item {
+    padding-right: 50px;
+  }
+}
+.btn {
+  font-size: 14px;
+}
+.navbar-brand {
+  margin-left: 40px;
+}
+.nav-item {
+  a {
+    position: relative;
+  }
+  a::after {
+    position: absolute;
+    content: "";
+    bottom: 8px;
+    left: 8px;
+    width: 0px;
+    height: 3px;
+    background-color: #efa13f;
+  }
+  a:hover::after {
+    width: 42px;
+  }
+}
+.login {
+  background-color: transparent;
+  color: #1b1a17;
+  border-radius: 30px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+    rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+}
+
+.login:hover {
+  background-color: #efa13f;
+  color: white;
+  border: 1px solid #efa13f;
+}

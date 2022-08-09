@@ -1,0 +1,250 @@
+.fondo {
+  background-color: #f8f8f8;
+
+  .texto {
+    background-color: #f8f8f8;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    h1 {
+      font-size: 2.5rem;
+      margin-top: -15px;
+      font-weight: 600;
+    }
+    h5 {
+      font-family: "Square Peg", cursive;
+      font-size: 3rem;
+      margin-left: 5px;
+    }
+  }
+  .imgPrincipal {
+    background-image: url("../../../assets/img/food.png");
+    background-repeat: none;
+    background-size: cover;
+    height: 80vh;
+    padding: 0;
+    img {
+      padding: 0;
+    }
+  }
+}
+
+.horarios {
+  margin-top: -280px;
+  display: flex;
+  justify-content: flex-end;
+  gap: 50px;
+  .card-1 {
+    margin-right: 20px;
+    width: 220px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+    background-color: #ffff;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    i {
+      margin: 5px 5px;
+      color: #efa13f;
+    }
+    p {
+      margin: 5px 0;
+    }
+    .subtitulo {
+      color: #918c8ced;
+    }
+  }
+}
+.card-container {
+  margin-top: 80px;
+  max-height: fit-content;
+  display: flex;
+  justify-content: center;
+  .card {
+    width: 250px;
+    margin: 20px;
+    border-radius: 10px;
+    background-color: #ffffff;
+    overflow: hidden;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.4);
+
+    .card-count-container {
+      display: flex;
+      align-items: center;
+      width: 100%;
+      height: 200px;
+      padding: 20px 0px;
+    }
+
+    .card-count {
+      font-weight: bold;
+      font-size: 100px;
+      width: 150px;
+      height: 150px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 50%;
+      margin: auto;
+      margin-right: -50px;
+      padding-right: 25px;
+      overflow: hidden;
+      color: #ffffff;
+      box-shadow: inset 0px 0px 10px rgba(0, 0, 0, 0.5);
+      text-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5);
+      transition: all 0.2s ease-in-out;
+    }
+
+    .card-content {
+      padding: 20px;
+      padding-top: 0px;
+
+      h2 {
+        margin-top: 0px;
+        text-align: center;
+      }
+    }
+
+    .card-footer {
+      height: 55px;
+      background-image: linear-gradient(
+        to right top,
+        #000000,
+        #161515,
+        #242222,
+        #343030,
+        #443f3f
+      );
+    }
+
+    &:nth-child(1) {
+      .card-count,
+      .card-footer {
+        background-image: linear-gradient(
+          to right top,
+          #000000,
+          #161515,
+          #242222,
+          #343030,
+          #443f3f
+        );
+      }
+    }
+
+    &:nth-child(2) {
+      .card-count,
+      .card-footer {
+        background-image: linear-gradient(90deg, #fec22f, #ea9826);
+      }
+    }
+
+    &:nth-child(3) {
+      .card-count,
+      .card-footer {
+        background-image: linear-gradient(
+          to right top,
+          #000000,
+          #161515,
+          #242222,
+          #343030,
+          #443f3f
+        );
+      }
+    }
+
+    &:hover {
+      .card-count {
+        width: 160px;
+        height: 160px;
+      }
+    }
+  }
+
+  @media (max-width: 767px) {
+    flex-wrap: wrap;
+  }
+}
+.menuCompleto {
+  background-image: url("../../../assets/img/fondo-restaurante.jpg");
+  background-size: cover;
+  margin-top: 40px;
+  max-height: fit-content;
+
+  .buscador {
+    text-align: center;
+
+    h5 {
+      margin-left: 30px;
+      margin-top: 40px;
+      display: inline-block;
+      font-size: 2rem;
+      font-weight: bold;
+      position: relative;
+    }
+    h5::after {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 90px;
+      height: 4px;
+      background-color: #efa13f;
+    }
+
+    img {
+      display: inline-block;
+    }
+
+    input {
+      width: 50%;
+      background-color: rgb(27, 26, 26);
+      border: none;
+      height: 3rem;
+      margin-left: 30px;
+      color: #efa13f;
+    }
+
+    input:hover {
+      border-bottom: 5px solid #efa13f;
+    }
+  }
+}
+
+h6 {
+  margin-left: 30px;
+}
+
+.container {
+  margin-top: 3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 20px;
+  row-gap: 30px;
+}
+
+.titulo-2 {
+  margin-top: 100px;
+  text-align: center;
+  font-size: 2.5rem;
+  font-weight: 600;
+}
+
+@media (min-width: 1650px) {
+  .horarios {
+    margin-top: -480px;
+
+    .card-1 {
+      width: 400px;
+    }
+  }
+}
+.vacio {
+  p {
+    color: #5d5c5c;
+    line-height: 1.4em;
+    text-align: justify;
+  }
+}

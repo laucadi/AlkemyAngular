@@ -1,0 +1,95 @@
+.container {
+  width: 400px;
+}
+
+.container .carta {
+  border-radius: 30px;
+  overflow: hidden;
+}
+
+.container .card-header {
+  background-color: #ea9329;
+  background-color: #ea9329;
+  height: 55px;
+}
+
+.container .imagen {
+  height: 55px;
+  padding: 0;
+}
+
+.container .imagen img {
+  width: 100%;
+}
+
+.container .imagen section {
+  width: 100%;
+  height: 55px;
+  background-color: #ea9329;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.container .imagen section span img {
+  width: 40px;
+}
+
+.container .cuerpo h1 {
+  font-size: 1.8rem;
+  padding-top: 20px;
+  font-weight: bold;
+  position: relative;
+}
+
+.container .cuerpo h1:after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 90px;
+  height: 4px;
+  background-color: #efa13f;
+}
+
+.container .cuerpo p {
+  font-size: 0.8rem;
+}
+
+.container .secciones {
+  border-bottom-right-radius: 30px;
+  border-bottom-left-radius: 30px;
+}
+
+.container .seccion {
+  border-radius: 30%;
+}
+
+.container .seccion i {
+  color: #ea9329;
+}
+
+.container .seccion h5,
+.container .seccion h6 {
+  color: #343434;
+  font-size: 0.7rem;
+}
+
+.container .seccion button {
+  padding: 0px 5px 5px 5px;
+}
+
+.container .seccion button img {
+  width: 32px;
+}
+
+.container .comprar {
+  cursor: pointer;
+  background-color: #ea9329;
+  border-radius: 0;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+          box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+/*# sourceMappingURL=cards.component.css.map */

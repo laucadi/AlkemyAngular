@@ -1,0 +1,114 @@
+<!--nueva manera-->
+<div class="container  my-5">
+    <div class="row align-items-center shadow rounded-lg my-5 carta ">
+        <div class="col imagen">
+            <section>
+                <span class="mx-3 my-2" [hidden]="recipe.vegan ===false"><img src="assets/img/vegan.png" alt=""
+                        width="40px"></span>
+                <span class="mx-2 my-2" [hidden]="recipe.glutenFree ===false"><img src="assets/img/gluten-free.png"
+                        alt="" width="40px"></span>
+                <span class="mx-2 my-2" [hidden]="recipe.dairyFree ===false"><img src="assets/img/milk-free.png" alt=""
+                        width="40px"></span>
+
+            </section>
+        </div>
+        <img [src]='recipe.image' class="img-fluid" alt="graphics">
+        <div class="col-lg  cuerpo">
+            <h1 class="mb-4">{{recipe.title}}</h1>
+            <p class="mb-4 text-truncate " [innerHTML]="recipe.summary">
+            </p>
+            <section class="text-center">
+                <div class="row d-flex justify-content-between secciones ">
+                    <div class="col-lg-3 col-md-6 mb-3 mb-md-5 mb-lg-0 position-center seccion">
+                        <i class="fas fa-dollar-sign fa-2x  mb-2"></i>
+                        <h5 class=" fw-bold mb-3">Precio por porcion</h5>
+                        <h6 class="fw-normal mb-2">${{recipe.pricePerServing}}</h6>
+                        <div class="vr vr-blurry position-absolute my-0 h-100 d-none d-md-block top-0 end-0"></div>
+                    </div>
+
+                    <div class="col-lg-3 col-md-6 mb-3 mb-md-5 mb-lg-0 position-center seccion">
+                        <i class="far fa-heart fa-2x mb-2"></i>
+                        <h5 class=" fw-bold mb-3">Healthy Score</h5>
+                        <h6 class="fw-normal mb-2">{{recipe.healthScore}}</h6>
+                        <div class="vr vr-blurry position-absolute my-0 h-100 d-none d-md-block top-0 end-0"></div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 mb-3 mb-md-5 mb-lg-0 position-center seccion">
+                        <i class="far fa-clock fa-2x  mb-2"></i>
+                        <h5 class=" fw-bold  mb-3">Tiempo preparacion</h5>
+                        <h6 class="fw-normal mb-2">{{recipe.readyInMinutes}} Min.</h6>
+                        <div class="vr vr-blurry position-absolute my-0 h-100 d-none d-md-block top-0 end-0"></div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 mb-3 mb-md-5 mb-lg-0 position-center seccion comprar"
+                        (click)="addToCart(recipe)">
+                        <button class="btn"><img src="https://cdn-icons-png.flaticon.com/512/3523/3523885.png" alt=""
+                                width="40px"></button>
+                        <h5 class=" fw-bold  mb-3">Agregar al carrito</h5>
+                        <div class="vr vr-blurry position-absolute my-0 h-100 d-none d-md-block top-0 end-0"></div>
+                    </div>
+
+                </div>
+            </section>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+
+
+<!--info local storage-->
+<!--<div class="container  my-5">
+    <div class="row align-items-center shadow rounded-lg my-5 carta" *ngFor="let item of menuC">
+        <div class="col-lg imagen">
+            <section>
+                <span class="mx-3 my-2" [hidden]="item.vegan ===false"><img src="assets/img/vegan.png" alt=""
+                        width="50px"></span>
+                <span class="mx-2 my-2" [hidden]="item.gluttenFree ===false"><img src="assets/img/gluten-free.png"
+                        alt="" width="50px"></span>
+                <span class="mx-2 my-2" [hidden]="item.dairyFree ===false"><img src="assets/img/milk-free.png" alt=""
+                        width="50px"></span>
+
+            </section>
+            <img [src]='item.image' class="img-fluid" alt="graphics" width="400px">
+
+        </div>
+        <div class="col-lg  cuerpo">
+            <h1 class="mb-4">{{item.title}}</h1>
+            <p class="mb-4 text-truncate " [innerHTML]="item.summary">
+            </p>
+            <section class="text-center">
+                <div class="row d-flex justify-content-between secciones ">
+                    <div class="col-lg-3 col-md-6 mb-5 mb-md-5 mb-lg-0 position-center seccion">
+                        <i class="fas fa-dollar-sign fa-2x  mb-2"></i>
+                        <h5 class=" fw-bold mb-3">Precio</h5>
+                        <h6 class="fw-normal mb-0">${{item.pricePerServing}}</h6>
+                        <div class="vr vr-blurry position-absolute my-0 h-100 d-none d-md-block top-0 end-0"></div>
+                    </div>
+
+                    <div class="col-lg-3 col-md-6 mb-5 mb-md-5 mb-lg-0 position-center seccion">
+                        <i class="far fa-heart fa-2x mb-2"></i>
+                        <h5 class=" fw-bold mb-3">Healthy Score</h5>
+                        <h6 class="fw-normal mb-0">{{item.healthScore}}</h6>
+                        <div class="vr vr-blurry position-absolute my-0 h-100 d-none d-md-block top-0 end-0"></div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 mb-5 mb-md-5 mb-lg-0 position-center seccion">
+                        <i class="far fa-clock fa-2x  mb-2"></i>
+                        <h5 class=" fw-bold  mb-3">Tiempo preparacion</h5>
+                        <h6 class="fw-normal mb-0">{{item.readyInMinutes}} Min.</h6>
+                        <div class="vr vr-blurry position-absolute my-0 h-100 d-none d-md-block top-0 end-0"></div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </div>
+</div>-->
+
+
+
+
+
+<!--<pre>
+    {{menuV |json}}
+</pre>-->

@@ -1,0 +1,68 @@
+.show {
+  display: block;
+  background-color: rgba(0, 0, 0, 0.351);
+}
+
+.wrapper {
+  max-width: 1400px;
+  margin: auto;
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.table {
+  font-size: 15px;
+}
+
+.table .emptyCart {
+  background-color: #dc3545;
+}
+
+.table .menu {
+  background-color: #efa13f;
+}
+
+#wizard {
+  position: relative;
+  background: #fff;
+  height: 554px;
+  width: 738px;
+  padding: 71px 93px 0;
+  border-radius: 10px;
+  box-shadow: 0px 2px 7px 0px rgba(0, 0, 0, 0.1);
+  -webkit-box-shadow: 0px 2px 7px 0px rgba(0, 0, 0, 0.1);
+  -moz-box-shadow: 0px 2px 7px 0px rgba(0, 0, 0, 0.1);
+  -ms-box-shadow: 0px 2px 7px 0px rgba(0, 0, 0, 0.1);
+  -o-box-shadow: 0px 2px 7px 0px rgba(0, 0, 0, 0.1);
+  padding-bottom: 2rem;
+}
+
+@media (max-width: 767px) {
+  body {
+    background: none;
+  }
+  body .wrapper {
+    height: auto;
+    display: block;
+  }
+  body #wizard {
+    width: auto;
+    height: auto;
+    padding: 30px 20px;
+    border-radius: 0;
+    box-shadow: none;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    -ms-box-shadow: none;
+    -o-box-shadow: none;
+  }
+}
+/*# sourceMappingURL=venta-table.component.css.map */
