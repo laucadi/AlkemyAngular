@@ -23,4 +23,5 @@ Ingresar con estos datos❗️
 > Password: react
 > 
 
-![imagen](https://seeklogo.com/images/A/angular-icon-logo-9946B9795D-seeklogo.com.png){width="200px"}
+<img src="https://seeklogo.com/images/A/angular-icon-logo-9946B9795D-seeklogo.com.png" alt="drawing" width="100"/>
+
